@@ -22,7 +22,16 @@ A simple drop down dashboard based on tmux. It includes following parts:
 
 ### Install
 
-Firstly install the above dependencies and then clone this project. Open `.tmuxinator.yml` and change the value of `root` section to your project path. Run `tmuxinator start` in a terminal that supports dropdown, e.g. `xfce4-terminal`.
+Firstly install the above dependencies and then clone this project. Open `.tmuxinator.yml` and change the value of `root` section to your project path. Run `tmuxinator start` in a terminal that supports dropdown, e.g. `xfce4-terminal`. Besides, the Github activity scripts needs `PyGithub` package, try `pip install PyGithub`, then generate a token in your Github developer settings page. Example config file is 
+
+```JSON
+{
+    "username": "Hanaasagi",
+    "token": "A token"
+}
+
+```
+
 
 ### Screenshots
 
