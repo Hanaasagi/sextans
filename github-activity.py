@@ -72,9 +72,9 @@ class StarEventGather:
                 continue
             results.append(
                 StarEvent(
-                    username=event.actor.name,
+                    username=event.actor.name or "",
                     repo_name=event.repo.name.split("/")[-1],
-                    repo_fullname=event.repo.name,
+                    repo_fullname=event.repo.name or "",
                     repo_desc=event.repo.description or "",
                     repo_url=event.repo.html_url or "",
                     created_at=event.created_at,
@@ -139,7 +139,7 @@ class App:
         self._init_term_color()
 
         history = {}
-        while k != ord("q"):
+        while k != ord("Q"):
             stdscr.clear()
             height, width = stdscr.getmaxyx()
 
