@@ -132,6 +132,7 @@ class App:
         cursor_x = 0
         cursor_y = 0
 
+        stdscr.nodelay(True)
         # Clear and refresh the screen for a blank canvas
         stdscr.clear()
         stdscr.refresh()
