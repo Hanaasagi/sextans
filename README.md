@@ -1,5 +1,7 @@
 # sextans
 
+> *It's a private configuration and an ongoing experiment while I use Archlinux.*
+
 A simple drop down dashboard based on tmux. It includes following parts:
 
 - Weather/Calendar
@@ -18,6 +20,15 @@ A simple drop down dashboard based on tmux. It includes following parts:
 - [bottom](https://github.com/ClementTsang/bottom)
 - A drop-down terminal.
 
+### Install
+
+Firstly install the above dependencies and then clone this project. Open `.tmuxinator.yml` and change the value of `root` section to your project path. Run `tmuxinator start` in a terminal that supports dropdown, e.g. `xfce4-terminal`.
+
 ### Screenshots
 
 ![](.screenshots/demo.gif)
+
+
+### License
+
+BSD 3-Clause License
